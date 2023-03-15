@@ -127,6 +127,9 @@ def game_over():
     canvas.create_text(canvas.winfo_width()/2,canvas.winfo_height()/2,
                        font=("consolas",70),text="GAME OVER", fill="red")
 
+def new_game():
+    pass
+
 def quit():
 
     window.quit()
@@ -152,7 +155,7 @@ frame = Frame(window)
 frame.pack()
 
 # New Game
-Button(frame,text="New Game",font=("consolas",40),command=quit, bg="#FFA500").pack(side=LEFT)
+Button(frame,text="New Game",font=("consolas",40),command=new_game, bg="#FFA500").pack(side=LEFT)
 # Quiting Game
 Button(frame,text="Quit",font=("consolas",40),command=quit, bg="#313E7C").pack(side=LEFT)
 
